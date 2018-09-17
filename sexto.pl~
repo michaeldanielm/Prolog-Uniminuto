@@ -1,0 +1,2 @@
+interior([X|Col],Col).
+interior([Y|Col1], [y|Col2]):-interior([Y|Col1],Col1).

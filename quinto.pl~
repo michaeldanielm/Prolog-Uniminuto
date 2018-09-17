@@ -1,0 +1,12 @@
+rango(M,N,[]) :-
+	M > N.
+rango(M,N,[M|Rs]) :-
+	M =< N,
+	M1 is M+1,
+	rango(M1,N,Rs).
+
+range(I,I,[I]).
+range(I,K,[I|L]) :-
+		I < K,
+		I1 is I + 1,
+		range(I1,K,L).
